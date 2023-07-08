@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>london</title>
+    <link rel="icon" href="2.jpg">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            background-color: rgb(0, 0, 0);
+            position: sticky;
+            top: 0;
+            scroll-behavior: smooth;
+        }
+        
+        a {
+            line-height: 50px;
+            color: aliceblue;
+            text-decoration: none;
+            padding: 0 5px;
+
+        }
+
+        section {
+            height: calc(75vh - 25px);
+            scroll-margin-top: 50px;
+        }
+
+        #home {
+            background-color: rgb(92, 92, 202);
+        }
+
+        #galery {
+            background-color: rgb(61, 61, 69);
+        }
+
+        #about {
+            background-color: rgb(18, 166, 225);
+        }
+
+        #contact {
+            background-color: rgb(5, 123, 50);
+        }
+
+        .img {
+            background-image: url(1.jpg);
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            position:relative;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: auto;
+            box-shadow: 0 0 5px rgb(255, 0, 0),
+                0 0 25px rgb(49, 2, 255),
+                0 0 50px rgb(4, 174, 46),
+                0 0 100px rgb(0, 0, 0);
+            
+        }
+        .img::before{
+            content: 'London';
+            text-align: center;
+            color: rgb(77, 73, 73);
+            line-height: 150px;
+            background-color: rgba(0, 0, 0, 0.479);
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            border-radius: 10px;
+            transition: .4s;
+            scale: 1;
+            border-style: dashed;
+
+         
+        }
+        h1{
+            margin: 0;
+        }
+        .img:hover:before{
+            scale: 1;
+            opacity: 10%;
+        }
+
+        .img2 {
+            background-image: url(2.jpg);
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            position:relative;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: auto;
+            text-rendering: auto;
+            box-shadow: 0 0 5px rgb(255, 231, 231),
+                0 0 25px rgb(49, 2, 255),
+                0 0 50px rgb(129, 132, 129),
+                0 0 100px rgb(0, 0, 0);
+
+        }
+        .img2::before{
+            content: 'london';
+            text-align: center;
+            color: white;
+            line-height: 150px;
+            background-color: rgba(0, 0, 0, 0.479);
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            border-radius: 10px;
+            transition: .4s;
+            scale: 1;
+            
+
+        }
+        .img2:hover:before{
+            scale: 1;
+            opacity: 10%;
+        }
+
+        .img3 {
+            background-image: url(3.jpg);
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            position:relative;
+            margin: auto;
+            border-radius: 20px;
+            cursor: pointer;
+        
+       
+            box-shadow: 0 0 5px rgb(189, 225, 7),
+                0 0 25px rgb(115, 112, 25),
+                0 0 50px rgb(129, 132, 129),
+                0 0 100px rgb(218, 202, 18);
+        }
+
+        .img3::before{
+            content: 'london';
+            text-align: center;
+            color: white;
+            line-height: 150px;
+            background-color: rgba(0, 0, 0, 0.479);
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            border-radius: 10px;
+            transition: .4s;
+            scale: 1;
+
+        }
+        .img3:hover:before{
+            scale: 1;
+            opacity: 10%;
+        }
+
+        .img4 {
+            background-image: url(4.jpg);
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            background-size: cover;
+            text-align: center;
+            position:relative;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 0 5px rgb(146, 146, 146),
+                0 0 25px rgb(41, 9, 222),
+                0 0 50px rgb(0, 255, 0),
+                0 0 100px rgb(0, 0, 0);
+          
+        }
+
+        
+        .img4::before{
+            content: 'london';
+            text-align: center;
+            color: white;
+            line-height: 150px;
+            background-color: rgba(0, 0, 0, 0.479);
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            border-radius: 10px;
+            transition: .4s;
+            scale: 1;
+        }
+        .img4:hover:before{
+            scale: 1;
+            opacity: 10%;
+        }
+        p{
+            padding: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <a href="#home">home</a>
+        <a href="#galery">galery</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <section id="home">
+        <h1>London</h1>
+
+        <p>London (/ˈlʌndən/ (listen)) is the capital and largest city of England and the United Kingdom, with a population of just under 9 million.[1][note 1] It stands on the River Thames in south-east England at the head of a 50-mile (80 km) estuary down to the North Sea, and has been a major settlement for two millennia.[9] The City of London, its ancient core and financial centre, was founded by the Romans as Londinium and retains its medieval boundaries.[note 2][10] The City of Westminster, to the west of the City of London, has for centuries hosted the national government and parliament. Since the 19th century,[11] the name "London" has also</p>
+        <div class="img"></div>
+    </section>
+    <section id="galery">
+        <h1>London</h1>
+
+        <p>London is an ancient name, attested in the first century AD, usually in the Latinised form Londinium.[35] Modern scientific analyses of the name must account for the origins of the different forms found in early sources: Latin (usually Londinium), Old English (usually Lunden), and Welsh (usually Llundein), with reference to the known developments over time of sounds in those different languages. It is agreed that the name came into these languages from Common Brythonic; recent work tends to reconstruct the lost Celtic form of the name as *Londonjon or something similar. This was adapted into Latin as Londinium and borrowed into Old English.[36]
+
+            Until 1889, the name "London" applied officially only to the City of London, b</p>
+        <div class="img2"></div>
+    </section>
+    <section id="about">
+        <h1>London</h1>
+
+        <p>With the early 5th-century collapse of Roman rule, the walled city of Londinium was effectively abandoned, although Roman civilisation continued around St Martin-in-the-Fields until about 450.[44] From about 500, an Anglo-Saxon settlement known as Lundenwic developed slightly west of the old Roman city.[45] By about 680 the city had become a major port again, but there is little evidence of large-scale production. From the 820s repeated Viking assaults brought decline. Three are recorded; those in 851 and 886 succeeded, while the last, in 994, was rebuffed.[46]
+
+            The Vikings applied Danelaw over much of eastern and northern England, its boundary running roughly from London to Chester as an area of political and geographical control imposed by the Viking incursions formally agreed by the Danish warlord, Guthrum and the West Saxon king Alfred the Great in 886. The Anglo-Saxon Chronicle records that Alfred "refounded" London in 886. Archaeological research shows this involved abandonment of Lundenwic and a revival of life and trade within the old Roman walls. London then grew slowly until a dramatic increase in about 950.[47]</p>
+        <div class="img3"></div>
+    </section>
+    <section id="contact">
+        <h1>London</h1>
+
+        <p>Yet English maritime enterprise hardly reached beyond the seas of north-west Europe. The commercial route to Italy and the Mediterranean was normally through Antwerp and over the Alps; any ships passing through the Strait of Gibraltar to or from England were likely to be Italian or Ragusan. The reopening of the Netherlands to English shipping in January 1565 spurred a burst of commercial activity.[60] The Royal Exchange was founded.[61] Mercantilism grew and monopoly traders such as the East India Company were founded as trade expanded to the New World. London became the main North Sea port, with migrants arriving from England and abroad. The population rose from about 50,000 in 1530 to about 225,000 in 1605.[57]
+
+            In the 16th century, William Shakespeare and his contemporaries lived in London during English Renaissance theatre. Shakespeare's Globe Theatre was constructed in 1599 in Southwark. Stage performances came to a halt in London when Puritan authorities shut down the theatres in the 1640s and 1650s.[62] The ban on theatre was lifted during the Restoration in 1660, and London's oldest operating theatre, Drury Lane, opened in 1663 in what is now the West End theatre district.[63]</p>
+        <div class="img4"></div>
+    </section>
+</body>
+</html>
